@@ -7,6 +7,7 @@ public class Data {
     public String errMsgForWrongEmail="Mail adresi ile kayıtlı bir hesap bulunamamıştır. Üye Ol seçeneği ile üye olabilirsiniz.";
     public String errMsgForWrongPassword="Hatalı şifre girdiniz. Lütfen tekrar deneyin ya da Şifremi Unuttum seçeneği ile şifrenizi sıfırlayınız.";
     public String maxCharacter="eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee";
-    public String errMsgMaxCharEmail="Lütfen e-posta adresinizi veya telefon numaranızı giriniz";
-
+    public String minCharacter="12";
+    public String errMessageEmailOrPhone="Lütfen e-posta adresinizi veya telefon numaranızı giriniz";
+    public String emptyErrPassword="Lütfen şifrenizi giriniz";
 }

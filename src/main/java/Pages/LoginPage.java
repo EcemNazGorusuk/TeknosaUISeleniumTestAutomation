@@ -73,4 +73,37 @@ public class LoginPage extends BaseLibrary {
         System.out.println(value);
         return this;
     }
+
+    @Step("Check the error message for min character limit for wrong email/phone number")
+    public LoginPage checkMinCharacterErrMsgEmail(String txt) {
+        String value = driver.findElement(By.id("j_username1-error")).getText();
+        Assert.assertEquals(txt, value);
+        System.out.println(value);
+        return this;
+    }
+
+    @Step("Check the error message for min character limit for wrong password")
+    public LoginPage checkMinCharacterErrMsgPassword(String txt) {
+        String value = driver.findElement(By.cssSelector("#loginForm > div.lgn > div > label > p")).getText();
+        Assert.assertEquals(txt, value);
+        System.out.println(value);
+        return this;
+    }
+
+    //
+    @Step("Check the error message for empty email/phone number field")
+    public LoginPage emptyCharControlErrMsgEmail(String txt) {
+        String value = driver.findElement(By.id("j_username1-error")).getText();
+        Assert.assertEquals(txt, value);
+        System.out.println(value);
+        return this;
+    }
+
+    @Step("Check the error message for empty password field")
+    public LoginPage emptyCharControlErrMsgPassword(String txt) {
+        String value = driver.findElement(By.id("j_password-error")).getText();
+        Assert.assertEquals(txt, value);
+        System.out.println(value);
+        return this;
+    }
 }

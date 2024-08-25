@@ -2,9 +2,12 @@ import Base.BaseTest;
 import Pages.HomePage;
 import Pages.LoginPage;
 import Pages.MainPage;
+import io.qameta.allure.Feature;
 import org.testng.annotations.Test;
 
+@Feature("Login Test Scenarios")
 public class LoginTests extends BaseTest {
+
     LoginPage loginPage=new LoginPage();
     MainPage mainPage=new MainPage();
     HomePage homePage=new HomePage();
@@ -46,7 +49,7 @@ public class LoginTests extends BaseTest {
         loginPage.fillEmailOrPhoneNumberInputField(maxCharacter)
                  .clickContinueButton();
         sleepThread(3000);
-        loginPage.checkMaxCharacterErrMsgEmail(errMsgMaxCharEmail);
+        loginPage.checkMaxCharacterErrMsgEmail(errMessageEmailOrPhone);
     }
 
     @Test(description = "Maximum character control with wrong password")
@@ -60,5 +63,45 @@ public class LoginTests extends BaseTest {
         loginPage.checkMaxCharacterErrMsgPassword(errMsgForWrongPassword);
     }
 
-    //min char
+
+    @Test(description = "Minimum character control with wrong email")
+    public void minCharacterControlWithEmail() throws InterruptedException {
+        loginPage.fillEmailOrPhoneNumberInputField(minCharacter)
+                 .clickContinueButton();
+        sleepThread(3000);
+        loginPage.checkMinCharacterErrMsgEmail(errMessageEmailOrPhone);
+    }
+
+
+    @Test(description = "Minimum character control with wrong password")
+    public void minCharacterControlWithPassword() throws InterruptedException {
+        loginPage.fillEmailOrPhoneNumberInputField(email)
+                .clickContinueButton();
+        sleepThread(3000);
+        loginPage.fillPasswordInputField(minCharacter)
+                .clickLoginButton();
+        sleepThread(3000);
+        loginPage.checkMinCharacterErrMsgPassword(errMsgForWrongPassword);
+    }
+
+    @Test(description = "Check for empty email or phone number field")
+    public void checkEmptyEmailOrPhoneField() throws InterruptedException {
+        loginPage.fillEmailOrPhoneNumberInputField("")
+                 .clickContinueButton();
+        sleepThread(3000);
+        loginPage.emptyCharControlErrMsgEmail(errMessageEmailOrPhone);
+    }
+
+
+    @Test(description = "Check for empty password field")
+    public void checkEmptyPasswordField() throws InterruptedException {
+        loginPage.fillEmailOrPhoneNumberInputField(email)
+                .clickContinueButton();
+        sleepThread(3000);
+        loginPage.fillPasswordInputField("")
+                 .clickLoginButton();
+        sleepThread(3000);
+        loginPage.emptyCharControlErrMsgPassword(emptyErrPassword);
+    }
+
 }
