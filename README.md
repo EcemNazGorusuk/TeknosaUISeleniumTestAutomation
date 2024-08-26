@@ -1,5 +1,5 @@
 <h1>🧪TEST AUTOMATION PROJECT</h1>
-<p>Developed as a Techcareer Mastery Bootcamp's assignment, this project targets the testing of the <a href="https://www.teknosa.com/">teknosa.com</a> website. It employs JUnit and Selenium for test automation, and Allure Report for visualizing test results. Can Şeker supervises the project.</p>
+<p>Developed as an assignment for Techcareer Mastery Bootcamp, this project focuses on testing the <a href="https://www.teknosa.com/">teknosa.com</a> website. JUnit and Selenium are used for test automation, and test results are visualized through Allure Report. The project is supervised by Can Şeker.</p>
 
 <h2>Content Overview</h2>
 <ul>
@@ -33,14 +33,14 @@
 </ul>
 
 <h3 id="results">Results</h3>
-<p>Using Allure Report, test results are clearly visualized, offering detailed reports that encompass test successes, failures, execution times, and various other critical metrics.</p>
+<p>Allure Report provides clear visualization of test results, offering detailed reports that include test successes, failures, execution times, and other essential metrics.</p>
 
 <h3 id="contributors">Contributors</h3>
 <p> <a href="https://github.com/EcemNazGorusuk">Ecem Naz Görüşük</a> - Project Developer and Main Contributor</p>
 
 <h3 id="screenshots">Screenshots</h3>
 <ul>
-  <li><img src="allure-screenshots/first.PNG"></li>
+ /** <li><img src="allure-screenshots/first.PNG"></li>
     <li><img src="allure-screenshots/second.PNG"></li>
     <li><img src="allure-screenshots/third.PNG"></li>
     <li><img src="allure-screenshots/forth.PNG"></li>
@@ -50,4 +50,4 @@
     <li><img src="allure-screenshots/eigth.PNG"></li>
     <li><img src="allure-screenshots/nineth.PNG"></li>
     <li><img src="allure-screenshots/tenth.PNG"></li>
-</ul>
+</ul>**/
