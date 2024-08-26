@@ -13,10 +13,14 @@ public class BaseTest extends BaseLibrary{
         driver=new ChromeDriver();
         driver.manage().window().maximize(); //To maximize the window
         driver.get("https://www.teknosa.com/login");
+        //mainPage.closeCokieNotificationButton();
     }
 
     @AfterMethod
     public void tearDown(){
-        driver.quit();
+        if (driver != null) {
+            driver.quit();
+            driver = null;
+        }
     }
 }

@@ -74,5 +74,15 @@ public class MainPage extends BaseLibrary {
         WebElement element = driver.findElement(By.cssSelector(".sortForm2 li:nth-child(3)"));
         element.click();
         return this;
-}
+   }
+
+    @Step("Cookie Notification Control")
+    public MainPage closeCokieNotificationButton() throws InterruptedException {
+        sleepThread(4000);
+        WebElement element=driver.findElement(By.id("b7bca45b-4b2f-4bf7-a04a-c5b0aec83d7e"));
+        if(element.isDisplayed())
+            driver.findElement(By.id("b7bca45b-4b2f-4bf7-a04a-c5b0aec83d7e")).click();
+        return this;
+    }
+
 }

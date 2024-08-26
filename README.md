@@ -44,15 +44,11 @@
 
 <h3 id="screenshots">Screenshots</h3>
 <ul>
- /** <li><img src="allure-screenshots/first.PNG"></li>
-    <li><img src="allure-screenshots/second.PNG"></li>
-    <li><img src="allure-screenshots/third.PNG"></li>
-    <li><img src="allure-screenshots/forth.PNG"></li>
-    <li><img src="allure-screenshots/fifth.PNG"></li>
-    <li><img src="allure-screenshots/sixth.PNG"></li>
-    <li><img src="allure-screenshots/seventh.PNG"></li>
-    <li><img src="allure-screenshots/eigth.PNG"></li>
-    <li><img src="allure-screenshots/nineth.PNG"></li>
-    <li><img src="allure-screenshots/tenth.PNG"></li>
-</ul>**/
+  <li><img src="allure-screenshots/ss1.PNG"></li>
+    <li><img src="allure-screenshots/ss2.PNG"></li>
+    <li><img src="allure-screenshots/ss3.PNG"></li>
+    <li><img src="allure-screenshots/ss4.PNG"></li>
+    <li><img src="allure-screenshots/ss5.PNG"></li>
+    <li><img src="allure-screenshots/ss6.PNG"></li>
+</ul>
 </body>
