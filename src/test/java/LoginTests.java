@@ -13,7 +13,7 @@ public class LoginTests extends BaseTest {
     HomePage homePage=new HomePage();
 
     @Test(description = "Successful user login control")
-    public void loginSuccessful() throws InterruptedException {
+    public void tc01_loginSuccessful() throws InterruptedException {
       loginPage.fillEmailOrPhoneNumberInputField(email)
                .clickContinueButton();
       sleepThread(3000);
@@ -23,10 +23,12 @@ public class LoginTests extends BaseTest {
       loginPage.clickRemindLaterButton();
       sleepThread(3000);
       homePage.myAccountControl();
+
+
     }
 
     @Test(description = "Unsuccessful user login control with wrong email")
-    public void checkUnsuccessfulLoginWithEmail() throws InterruptedException {
+    public void tc02_checkUnsuccessfulLoginWithEmail() throws InterruptedException {
         loginPage.fillEmailOrPhoneNumberInputField("wrong-email@gmail.com")
                  .clickContinueButton();
         sleepThread(3000);
@@ -34,7 +36,7 @@ public class LoginTests extends BaseTest {
     }
 
     @Test(description = "Unsuccessful user login control with wrong password")
-    public void checkUnsuccessfulLoginWithPassword() throws InterruptedException {
+    public void tc03_checkUnsuccessfulLoginWithPassword() throws InterruptedException {
         loginPage.fillEmailOrPhoneNumberInputField(email)
                  .clickContinueButton();
         sleepThread(3000);
@@ -45,7 +47,7 @@ public class LoginTests extends BaseTest {
     }
 
     @Test(description = "Maximum character control with wrong email")
-    public void maxCharacterControlWithEmail() throws InterruptedException {
+    public void tc04_maxCharacterControlWithEmail() throws InterruptedException {
         loginPage.fillEmailOrPhoneNumberInputField(maxCharacter)
                  .clickContinueButton();
         sleepThread(3000);
@@ -53,7 +55,7 @@ public class LoginTests extends BaseTest {
     }
 
     @Test(description = "Maximum character control with wrong password")
-    public void maxCharacterControlWithPassword() throws InterruptedException {
+    public void tc05_maxCharacterControlWithPassword() throws InterruptedException {
         loginPage.fillEmailOrPhoneNumberInputField(email)
                  .clickContinueButton();
         sleepThread(3000);
@@ -65,7 +67,7 @@ public class LoginTests extends BaseTest {
 
 
     @Test(description = "Minimum character control with wrong email")
-    public void minCharacterControlWithEmail() throws InterruptedException {
+    public void tc06_minCharacterControlWithEmail() throws InterruptedException {
         loginPage.fillEmailOrPhoneNumberInputField(minCharacter)
                  .clickContinueButton();
         sleepThread(3000);
@@ -74,7 +76,7 @@ public class LoginTests extends BaseTest {
 
 
     @Test(description = "Minimum character control with wrong password")
-    public void minCharacterControlWithPassword() throws InterruptedException {
+    public void tc07_minCharacterControlWithPassword() throws InterruptedException {
         loginPage.fillEmailOrPhoneNumberInputField(email)
                 .clickContinueButton();
         sleepThread(3000);
@@ -85,7 +87,7 @@ public class LoginTests extends BaseTest {
     }
 
     @Test(description = "Check for empty email or phone number field")
-    public void checkEmptyEmailOrPhoneField() throws InterruptedException {
+    public void tc08_checkEmptyEmailOrPhoneField() throws InterruptedException {
         loginPage.fillEmailOrPhoneNumberInputField("")
                  .clickContinueButton();
         sleepThread(3000);
@@ -94,7 +96,7 @@ public class LoginTests extends BaseTest {
 
 
     @Test(description = "Check for empty password field")
-    public void checkEmptyPasswordField() throws InterruptedException {
+    public void tc09_checkEmptyPasswordField() throws InterruptedException {
         loginPage.fillEmailOrPhoneNumberInputField(email)
                 .clickContinueButton();
         sleepThread(3000);

@@ -1,6 +1,6 @@
 package Base;
 
-public class Data {
+public class Data extends DataHelper{
     public static String email="ecemnazgorusuk@gmail.com";
     public static String password="Ecem12345";
     public String url="https://www.teknosa.com/login";
@@ -10,4 +10,9 @@ public class Data {
     public String minCharacter="12";
     public String errMessageEmailOrPhone="Lütfen e-posta adresinizi veya telefon numaranızı giriniz";
     public String emptyErrPassword="Lütfen şifrenizi giriniz";
+
+    @Override
+    public String formatEnterItemToSearch(String enterItemToSearch) {
+        return super.formatEnterItemToSearch(enterItemToSearch);
+    }
 }

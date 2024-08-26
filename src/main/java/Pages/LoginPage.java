@@ -90,7 +90,7 @@ public class LoginPage extends BaseLibrary {
         return this;
     }
 
-    //
+
     @Step("Check the error message for empty email/phone number field")
     public LoginPage emptyCharControlErrMsgEmail(String txt) {
         String value = driver.findElement(By.id("j_username1-error")).getText();
