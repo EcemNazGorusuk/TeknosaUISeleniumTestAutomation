@@ -1,6 +1,6 @@
 <body style="background-color: #ADD8E6;">
-<h1>🔍 TEST AUTOMATION PROJECT </h1>
-<p>Developed as an assignment for  <span style="color: orange; text-decoration: underline; font-style: italic; font-weight: bold;">Techcareer QA Mastery Bootcamp</span>
+<h1>🔍 TEST AUTOMATION PROJECT FOR TECHCAREER QA MASTERY BOOTCAMP </h1>
+<p>Developed as an assignment for  <span style="text-decoration: underline; font-style: italic; font-weight: bold;">Techcareer QA Mastery Bootcamp</span>
 , this project focuses on testing the <a href="https://www.teknosa.com/">teknosa.com</a> website. JUnit and Selenium are used for test automation, and test results are visualized through Allure Report. The project is supervised by Can Şeker.</p>
 
 <h2>Content Overview</h2>
