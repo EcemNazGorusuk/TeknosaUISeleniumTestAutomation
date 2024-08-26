@@ -13,7 +13,7 @@
 </ul>
 
 <h3 id="description">Project Description</h3>
-<p>This project is crafted to thoroughly test the functionalities of the <a href="https://www.teknosa.com/">teknosa.com</a> website. Using JUnit and Selenium, functional tests and user scenarios are meticulously executed. Detailed test reports are produced with the help of Allure Report. As an assignment for Techcareer, this project is under the careful supervision of Can Şeker.</p>
+<p>This project has been developed to thoroughly test the various functionalities of the <a href="https://www.teknosa.com/">teknosa.com</a> website. Comprehensive functional tests and user scenarios have been implemented using JUnit and Selenium. The test results are presented in detailed reports through Allure Report. Conducted as an assignment for Techcareer, this project is under the careful supervision of Can Şeker.</p>
 
 <h3 id="configuration">Project Configuration</h3>
 <h4>Requirements</h4>
