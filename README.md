@@ -1,4 +1,4 @@
-<h1>🧪TEST AUTOMATION PROJECT</h1>
+<h1>🔬TEST AUTOMATION PROJECT</h1>
 <p>Developed as an assignment for Techcareer Mastery Bootcamp, this project focuses on testing the <a href="https://www.teknosa.com/">teknosa.com</a> website. JUnit and Selenium are used for test automation, and test results are visualized through Allure Report. The project is supervised by Can Şeker.</p>
 
 <h2>Content Overview</h2>
@@ -22,6 +22,8 @@
   <li><a>Maven</a></li>
   <li><a>Selenium WebDriver</a></li>
   <li><a>Allure Commandline</a></li>
+  <li><a>TestNG</a></li>
+
 </ul>
 
 <h3 id="tests">Tests</h3>
