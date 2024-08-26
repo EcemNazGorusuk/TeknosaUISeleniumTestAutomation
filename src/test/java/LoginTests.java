@@ -23,8 +23,6 @@ public class LoginTests extends BaseTest {
       loginPage.clickRemindLaterButton();
       sleepThread(3000);
       homePage.myAccountControl();
-
-
     }
 
     @Test(description = "Unsuccessful user login control with wrong email")
