@@ -27,11 +27,11 @@
 </ul>
 
 <h3 id="tests">Tests</h3>
-<p>This project includes the following types of tests:</p>
+<p>This project encompasses the following types of tests:</p>
 <ul>
-  <li>Functional Tests: Tests the functionality of the web application.</li>
-  <li>User Scenarios: Simulates specific user scenarios.</li>
-  <li>Regression Tests: Verifies that existing features work after software updates.</li>
+  <li>Functional Tests: Evaluates the core functionality of the web application.</li>
+  <li>User Scenarios: Simulates particular user interactions and scenarios.</li>
+  <li>Regression Tests: Ensures that existing features continue to work correctly following software updates.</li>
 </ul>
 
 <h3 id="results">Results</h3>
